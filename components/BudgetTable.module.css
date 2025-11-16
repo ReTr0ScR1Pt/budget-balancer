@@ -1,0 +1,148 @@
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.noData {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.monthSection {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.monthHeader {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.monthHeader h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.monthSummary {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.summaryItem {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.summaryItem.income {
+  color: #2ecc71;
+}
+
+.summaryItem.expense {
+  color: #e74c3c;
+}
+
+.summaryItem.savings.positive {
+  color: #3498db;
+}
+
+.summaryItem.savings.negative {
+  color: #f39c12;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  background: #f8f9fa;
+}
+
+table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.typeBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.typeBadge.income {
+  background: #d4edda;
+  color: #155724;
+}
+
+.typeBadge.expense {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.amount {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.amount.income {
+  color: #2ecc71;
+}
+
+.amount.expense {
+  color: #e74c3c;
+}
+
+.deleteBtn {
+  padding: 6px 12px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.3s;
+}
+
+.deleteBtn:hover {
+  background: #c0392b;
+}
+
