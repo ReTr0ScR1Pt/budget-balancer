@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Cloudflare Pages will handle the build output
+  output: 'export',
   images: {
     unoptimized: true,
   },
+  trailingSlash: true,
 }
 
 module.exports = nextConfig

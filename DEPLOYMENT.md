@@ -52,9 +52,9 @@ git push -u origin main
 3. Connect your GitHub account
 4. Select your repository: `budget_planner`
 5. Configure build settings:
-   - **Framework preset**: Next.js
+   - **Framework preset**: Next.js (Static HTML Export)
    - **Build command**: `npm run build`
-   - **Build output directory**: `.next`
+   - **Build output directory**: `out`
    - **Root directory**: `/` (leave as root)
 6. Add environment variables (if needed):
    - `NEXT_PUBLIC_API_URL` = `/api` (optional, defaults to `/api`)

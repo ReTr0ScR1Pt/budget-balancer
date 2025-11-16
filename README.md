@@ -62,9 +62,9 @@ Visit `http://localhost:3000` to see the application.
 2. Go to [Cloudflare Dashboard](https://dash.cloudflare.com) → **Pages** → **Create a project**
 3. Connect your GitHub account and select your repository
 4. Configure build settings:
-   - **Framework preset**: Next.js
+   - **Framework preset**: Next.js (Static HTML Export)
    - **Build command**: `npm run build`
-   - **Build output directory**: `.next`
+   - **Build output directory**: `out`
 5. Add environment variables if needed
 6. Click **Save and Deploy**
 
