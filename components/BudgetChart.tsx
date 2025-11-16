@@ -47,7 +47,7 @@ export default function BudgetChart({ data }: BudgetChartProps) {
 
   return (
     <div className={styles.card}>
-      <h2>Budget Overview</h2>
+      <h2 className={styles.cardTitle}>Budget Overview</h2>
       <div className={styles.chartContainer}>
         {totals.length === 0 ? (
           <div className={styles.noData}>No budget data available. Add entries to see your budget overview.</div>

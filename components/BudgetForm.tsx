@@ -37,8 +37,8 @@ export default function BudgetForm({ onAdd }: BudgetFormProps) {
 
   return (
     <div className={styles.card}>
-      <h2>Add Budget Entry</h2>
-      <form onSubmit={handleSubmit}>
+      <h2 className={styles.cardTitle}>Add Budget Entry</h2>
+      <form onSubmit={handleSubmit} className={styles.cardForm}>
         <div className={styles.formRow}>
           <div className={styles.formGroup}>
             <label>Type</label>
@@ -105,7 +105,7 @@ export default function BudgetForm({ onAdd }: BudgetFormProps) {
           </div>
         </div>
 
-        <button type="submit">Add Entry</button>
+        <button type="submit" className={styles.cardButton}>Add Entry</button>
       </form>
     </div>
   )

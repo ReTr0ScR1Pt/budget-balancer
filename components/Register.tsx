@@ -38,14 +38,15 @@ export default function Register() {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <h1>Budget Balancer</h1>
-        <h2>Create Account</h2>
-        <form onSubmit={handleSubmit}>
+        <h1 className={styles.cardTitle}>Budget Balancer</h1>
+        <h2 className={styles.cardSubtitle}>Create Account</h2>
+        <form onSubmit={handleSubmit} className={styles.cardForm}>
           <input
             type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            className={styles.cardInput}
             required
           />
           <input
@@ -53,6 +54,7 @@ export default function Register() {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            className={styles.cardInput}
             required
           />
           <input
@@ -60,13 +62,14 @@ export default function Register() {
             placeholder="Confirm Password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
+            className={styles.cardInput}
             required
           />
           {error && <div className={styles.error}>{error}</div>}
-          <button type="submit">Register</button>
+          <button type="submit" className={styles.cardButton}>Register</button>
         </form>
-        <p>
-          Already have an account? <Link href="/login">Login</Link>
+        <p className={styles.cardText}>
+          Already have an account? <Link href="/login" className={styles.cardLink}>Login</Link>
         </p>
       </div>
     </div>

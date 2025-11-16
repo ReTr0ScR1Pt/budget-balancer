@@ -15,27 +15,27 @@
   max-width: 400px;
 }
 
-.card h1 {
+.cardTitle {
   text-align: center;
   color: #667eea;
   margin-bottom: 10px;
   font-size: 2rem;
 }
 
-.card h2 {
+.cardSubtitle {
   text-align: center;
   color: #333;
   margin-bottom: 30px;
   font-size: 1.5rem;
 }
 
-.card form {
+.cardForm {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.card input {
+.cardInput {
   padding: 12px;
   border: 2px solid #e0e0e0;
   border-radius: 8px;
@@ -43,12 +43,12 @@
   transition: border-color 0.3s;
 }
 
-.card input:focus {
+.cardInput:focus {
   outline: none;
   border-color: #667eea;
 }
 
-.card button {
+.cardButton {
   padding: 12px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -60,17 +60,17 @@
   transition: transform 0.2s;
 }
 
-.card button:hover {
+.cardButton:hover {
   transform: translateY(-2px);
 }
 
-.card p {
+.cardText {
   text-align: center;
   margin-top: 20px;
   color: #666;
 }
 
-.card a {
+.cardLink {
   color: #667eea;
   text-decoration: none;
   font-weight: bold;

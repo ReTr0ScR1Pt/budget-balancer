@@ -31,14 +31,15 @@ export default function Login({ setIsAuthenticated }: LoginProps) {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <h1>Budget Balancer</h1>
-        <h2>Login</h2>
-        <form onSubmit={handleSubmit}>
+        <h1 className={styles.cardTitle}>Budget Balancer</h1>
+        <h2 className={styles.cardSubtitle}>Login</h2>
+        <form onSubmit={handleSubmit} className={styles.cardForm}>
           <input
             type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            className={styles.cardInput}
             required
           />
           <input
@@ -46,13 +47,14 @@ export default function Login({ setIsAuthenticated }: LoginProps) {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            className={styles.cardInput}
             required
           />
           {error && <div className={styles.error}>{error}</div>}
-          <button type="submit">Login</button>
+          <button type="submit" className={styles.cardButton}>Login</button>
         </form>
-        <p>
-          Don't have an account? <Link href="/register">Register</Link>
+        <p className={styles.cardText}>
+          Don't have an account? <Link href="/register" className={styles.cardLink}>Register</Link>
         </p>
       </div>
     </div>

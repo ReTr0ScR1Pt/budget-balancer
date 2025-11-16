@@ -5,7 +5,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card h2 {
+.cardTitle {
   color: #333;
   margin-bottom: 20px;
   font-size: 1.5rem;

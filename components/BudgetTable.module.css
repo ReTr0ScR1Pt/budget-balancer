@@ -5,7 +5,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card h2 {
+.cardTitle {
   color: #333;
   margin-bottom: 20px;
   font-size: 1.5rem;
@@ -41,7 +41,7 @@
   gap: 15px;
 }
 
-.monthHeader h3 {
+.monthTitle {
   margin: 0;
   font-size: 1.3rem;
 }
@@ -73,16 +73,16 @@
   color: #f39c12;
 }
 
-table {
+.table {
   width: 100%;
   border-collapse: collapse;
 }
 
-table thead {
+.table thead {
   background: #f8f9fa;
 }
 
-table th {
+.table th {
   padding: 12px;
   text-align: left;
   font-weight: bold;
@@ -90,12 +90,12 @@ table th {
   border-bottom: 2px solid #e0e0e0;
 }
 
-table td {
+.table td {
   padding: 12px;
   border-bottom: 1px solid #e0e0e0;
 }
 
-table tbody tr:hover {
+.table tbody tr:hover {
   background: #f8f9fa;
 }
 

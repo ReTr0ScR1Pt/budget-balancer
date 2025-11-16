@@ -53,7 +53,7 @@ export default function BudgetTable({ data, onDelete }: BudgetTableProps) {
 
   return (
     <div className={styles.card}>
-      <h2>Budget Details</h2>
+      <h2 className={styles.cardTitle}>Budget Details</h2>
       {months.length === 0 ? (
         <div className={styles.noData}>No entries yet. Add your first budget entry above!</div>
       ) : (
@@ -61,7 +61,7 @@ export default function BudgetTable({ data, onDelete }: BudgetTableProps) {
           {months.map((monthData, index) => (
             <div key={index} className={styles.monthSection}>
               <div className={styles.monthHeader}>
-                <h3>{formatMonth(monthData.month, monthData.year)}</h3>
+                <h3 className={styles.monthTitle}>{formatMonth(monthData.month, monthData.year)}</h3>
                 <div className={styles.monthSummary}>
                   <span className={`${styles.summaryItem} ${styles.income}`}>Income: ${monthData.income.toFixed(2)}</span>
                   <span className={`${styles.summaryItem} ${styles.expense}`}>Expense: ${monthData.expense.toFixed(2)}</span>
@@ -70,7 +70,7 @@ export default function BudgetTable({ data, onDelete }: BudgetTableProps) {
                   </span>
                 </div>
               </div>
-              <table>
+              <table className={styles.table}>
                 <thead>
                   <tr>
                     <th>Type</th>
